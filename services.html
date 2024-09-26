@@ -47,8 +47,6 @@
             object-fit: cover;     
         }
         
-        
-        
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -58,11 +56,11 @@
         nav ul {
             display: flex;
             list-style-type: none;
-         
         }
         
         nav ul li {
-            margin-left: 20px;        }
+            margin-left: 20px;
+        }
         
         nav ul li a {
             color: white;
@@ -187,7 +185,7 @@
                 margin-top: 15px;
             }
         }
-</style>
+    </style>
 </head>
 <body>
     <header>
@@ -206,8 +204,7 @@
                     </ul>
                 </nav>
                 <div class="user-actions">
-                    <button class="login-btn" aria-label="Login"><a  href="login.html">Login</a></button>
-                    <button class="logout-btn" aria-label="Logout"><a href="logout.html">Logout</a></button>
+                    <button class="logout-btn" aria-label="Logout">Logout</button>
                 </div>
             </div>
         </div>
@@ -263,4 +260,21 @@
     </footer>
 </body>
 
+<script>
+    // Redirect to login page if not logged in
+    window.onload = function() {
+        if (localStorage.getItem('isLoggedIn') !== 'true') {
+            // If not logged in, redirect to login page
+            window.location.href = 'login.html';
+        }
+    };
+
+    // Logout functionality
+    document.querySelector('.logout-btn').addEventListener('click', function() {
+        // Remove login status from localStorage
+        localStorage.removeItem('isLoggedIn');
+        // Redirect to login page
+        window.location.href = 'login.html';
+    });
+</script>
 </html>
