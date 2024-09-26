@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cleaning Services - Social Assist</title>
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Align the logo to the far left and make it circular */
+.logo-container {
+    display: flex;
+    justify-content: flex-start;  /* Align logo to the left */
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;          /* Make the logo height equal to the width */
+    margin-right: 10px;
+    border-radius: 50%;    /* Make the logo circular */
+    object-fit: cover;     /* Ensure the image fits well inside the circle */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #4CAF50;
+    border-radius: 5px;
+}
+
+.user-actions button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #FFD700;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-actions button:hover {
+    background-color: #FFC107; /* Lighter gold on hover */
+}
+
+/* Service Detail Section */
+.service-detail-section {
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    position: relative;
+    color: white;
+}
+
+.service-detail-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.service-detail-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.service-detail-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #ffb300;
+}
+
+.cleaning-tasks h3 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: #ffb300;
+}
+
+.cleaning-tasks ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style: disc;
+    color: #ddd;
+}
+
+.cleaning-tasks ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+footer {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo-container">
+                    <img src="logo1.png" alt="Logo" class="logo">
+                    <h1>Social Assist</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            
+            </div>
+        </div>
+    </header>
+
+    <section class="service-detail-section" style="background-image: url('cc1.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Cleaning Services</h2>
+            <p>We offer a comprehensive range of cleaning services to ensure your space is spotless. Here's what we cover:</p>
+            <div class="cleaning-tasks">
+                <h3>1. Residential Cleaning</h3>
+                <ul>
+                    <li>Dusting, vacuuming, and sweeping.</li>
+                    <li>Sanitizing kitchens and bathrooms.</li>
+                    <li>Window and furniture cleaning.</li>
+                </ul>
+
+                <h3>2. Commercial Cleaning</h3>
+                <ul>
+                    <li>Office and workspace cleaning.</li>
+                    <li>Carpet and upholstery care.</li>
+                    <li>Janitorial services for large buildings.</li>
+                </ul>
+
+                <h3>3. Specialized Cleaning</h3>
+                <ul>
+                    <li>Deep cleaning services.</li>
+                    <li>Move-in/move-out cleaning.</li>
+                    <li>Post-construction cleaning.</li>
+                </ul>
+
+                <h3>4. Eco-Friendly Cleaning</h3>
+                <ul>
+                    <li>Using environmentally safe products.</li>
+                    <li>Minimizing water and chemical use.</li>
+                    <li>Recycling waste materials.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Empowering Communities, One Service at a Time.</p>
+            <p>At Social Assist, we are dedicated to providing high-quality, reliable services to enhance the lives of individuals and communities.</p>
+            <p>Need assistance? Contact us at <a href="sailendramuddapu@gmail.com">sailendramuddapu@gmail.com</a> or call us at 7989200103.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Example: Toggle login/logout button functionality
+        const loginButton = document.querySelector(".login-btn");
+        const logoutButton = document.querySelector(".logout-btn");
+    
+        loginButton.addEventListener("click", function () {
+            alert("Login functionality to be implemented.");
+            // You can add your login logic here
+        });
+    
+        logoutButton.addEventListener("click", function () {
+            alert("Logout functionality to be implemented.");
+            // You can add your logout logic here
+        });
+    });
+    
+</script>
+</html>

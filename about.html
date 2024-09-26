@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Social Assist</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+        }
+        
+        /* Align the logo to the far left and make it circular */
+        .logo-container {
+            display: flex;
+            justify-content: flex-start;  /* Align logo to the left */
+            align-items: center;
+        }
+        
+        .logo {
+            width: 50px;
+            height: 50px;          /* Make the logo height equal to the width */
+            margin-right: 10px;
+            border-radius: 50%;    /* Make the logo circular */
+            object-fit: cover;     /* Ensure the image fits well inside the circle */
+        }
+        
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: white;
+            color: #4CAF50;
+            border-radius: 5px;
+        }
+        nav ul li a.active {
+            background-color: white;
+            color: #4CAF50;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .user-actions button {
+            background-color: #FFD700;
+            border: none;
+            padding: 8px 12px;
+            color: #333;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .user-actions button:hover {
+            background-color: #FFC107;
+        }
+/* About Section */
+.about-section {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.about-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.about-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about-section h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffeb3b;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-section ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .about-section {
+        padding: 40px 10px;
+    }
+
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo-container">
+                    <img src="logo1.png" alt="Logo" class="logo">
+                    <h1>Social Assist</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html" class="active">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-section" style="background-image: url('ab1.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>About Social Assist</h2>
+            <p>At Social Assist, we are dedicated to providing top-quality professional services in various sectors including farming, construction, cleaning, and painting. Our mission is to make professional assistance easily accessible, reliable, and effective for everyone.</p>
+            <p>Whether you need help managing your agricultural land, constructing your dream home, or keeping your spaces clean and beautiful, Social Assist has the right experts for the job.</p>
+            <h3>Our Mission</h3>
+            <p>To empower communities and individuals by offering high-quality, accessible services in key industries, ensuring that all work is carried out by experienced and skilled professionals.</p>
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li>Wide range of professional services under one roof.</li>
+                <li>Experienced, qualified, and trusted professionals.</li>
+                <li>Committed to delivering high-quality results.</li>
+                <li>Customer-focused and service-oriented approach.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Empowering Communities, One Service at a Time.</p>
+            <p>At Social Assist, we are dedicated to providing high-quality, reliable services to enhance the lives of individuals and communities.</p>
+            <p>Need assistance? Contact us at <a href="sailendramuddapu@gmail.com">sailendramuddapu@gmail.com</a> or call us at 7989200103.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Toggle mobile menu for small screens
+        const toggleMenu = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('nav ul');
+    
+        if (toggleMenu) {
+            toggleMenu.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
+            });
+        }
+    });
+    
+</script>
+</html>

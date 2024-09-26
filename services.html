@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Social Assist</title>
+    <meta name="description" content="Explore our diverse services including farming support, construction, cleaning, and painting.">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+        }
+    
+        .logo-container {
+            display: flex;
+            justify-content: left ;  
+            align-items: center;
+        }
+        
+        .logo {
+            width: 50px;
+            height: 50px;          
+            margin-right: 10px;
+            border-radius: 50%;    
+            object-fit: cover;     
+        }
+        
+        
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style-type: none;
+         
+        }
+        
+        nav ul li {
+            margin-left: 20px;        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: white;
+            color: #4CAF50;
+            border-radius: 5px;
+        }
+        nav ul li a.active {
+            background-color: white;
+            color: #4CAF50;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .user-actions button {
+            background-color: #FFD700;
+            border: none;
+            padding: 8px 12px;
+            color: #333;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .user-actions button:hover {
+            background-color: #FFC107;
+        }
+        
+        /* Services Section */
+        .services-section {
+            padding: 40px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        
+        .services-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4CAF50;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .service-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .service-card h3 {
+            font-size: 22px;
+            color: #333;
+            margin: 15px 0;
+        }
+        
+        .service-card p {
+            font-size: 16px;
+            padding: 0 15px;
+            color: #666;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+        
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+        
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        
+            .user-actions {
+                margin-top: 15px;
+            }
+        }
+        
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo-container">
+                    <img src="logo1.png" alt="Social Assist Logo" class="logo">
+                    <h1>Social Assist</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html" class="active">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="user-actions">
+                    <button class="login-btn" aria-label="Login">Login</button>
+                    <button class="logout-btn" aria-label="Logout">Logout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="services-section">
+            <div class="container">
+                <h2>Explore Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <a href="farming.html">
+                            <img src="f1.jpg" alt="Farming Support Image">
+                            <h3>Farming Support</h3>
+                        </a>
+                        <p>Providing modern agricultural tools and expertise for better yields.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <a href="construction.html">
+                            <img src="c1.jpg" alt="Construction Services Image">
+                            <h3>Construction Services</h3>
+                        </a>
+                        <p>From foundations to finishing, we've got your construction needs covered.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <a href="cleaning.html">
+                            <img src="cc1.jpg" alt="Cleaning Services Image">
+                            <h3>Cleaning Services</h3>
+                        </a>
+                        <p>Keep your spaces clean with our professional cleaning services.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <a href="painting.html">
+                            <img src="p1.jpg" alt="Painting Services Image">
+                            <h3>Painting Services</h3>
+                        </a>
+                        <p>Bring your walls to life with our interior and exterior painting services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Empowering Communities, One Service at a Time.</p>
+            <p>At Social Assist, we are dedicated to providing high-quality, reliable services to enhance the lives of individuals and communities.</p>
+            <p>Need assistance? Contact us at <a href="sailendramuddapu@gmail.com">sailendramuddapu@gmail.com</a> or call us at 7989200103.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Login button functionality
+        const loginButton = document.querySelector(".login-btn");
+        const logoutButton = document.querySelector(".logout-btn");
+    
+        loginButton.addEventListener("click", function () {
+            alert("Login functionality will be implemented here.");
+            // You can add your login logic here
+        });
+    
+        logoutButton.addEventListener("click", function () {
+            alert("Logout functionality will be implemented here.");
+            // You can add your logout logic here
+        });
+    });
+    
+    
+</script>
+</html>

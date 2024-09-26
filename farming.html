@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farming Services - Social Assist</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        /* Align the logo to the far left and make it circular */
+        .logo-container {
+            display: flex;
+            justify-content: flex-start;  /* Align logo to the left */
+            align-items: center;
+        }
+        
+        .logo {
+            width: 50px;
+            height: 50px;          /* Make the logo height equal to the width */
+            margin-right: 10px;
+            border-radius: 50%;    /* Make the logo circular */
+            object-fit: cover;     /* Ensure the image fits well inside the circle */
+        }
+        
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: white;
+            color: #4CAF50;
+            border-radius: 5px;
+        }
+        
+        .user-actions button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: none;
+            background-color: #FFD700;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .user-actions button:hover {
+            background-color: #FFC107; /* Lighter gold on hover */
+        }
+        
+        /* Service Detail Section */
+        .service-detail-section {
+            background-size: cover;
+            background-position: center;
+            padding: 60px 0;
+            position: relative;
+            color: white;
+        }
+        
+        .service-detail-section .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+        
+        .service-detail-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .service-detail-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            color: #ffb300;
+        }
+        
+
+.farming-tasks h3 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: #ffb300;
+}
+
+.farming-tasks ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style: disc;
+    color: #ddd;
+}
+
+.farming-tasks ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+footer {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo-container">
+                    <img src="logo1.png" alt="Logo" class="logo">
+                    <h1>Social Assist</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="service-detail-section" style="background-image: url('f1.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Farming Services</h2>
+            <p>Farming involves a wide range of tasks that cover various stages of crop and livestock production. Here's a list of works that typically come under farming:</p>
+            <div class="farming-tasks">
+                <h3>1. Land Preparation</h3>
+                <ul>
+                    <li>Plowing, harrowing, and leveling fields.</li>
+                    <li>Soil testing and fertilization.</li>
+                    <li>Clearing land of debris and rocks.</li>
+                </ul>
+                <h3>2. Planting and Sowing</h3>
+                <ul>
+                    <li>Seed selection and preparation.</li>
+                    <li>Sowing seeds or transplanting seedlings.</li>
+                    <li>Irrigation system setup and management.</li>
+                </ul>
+
+                <h3>3. Crop Maintenance</h3>
+                <ul>
+                    <li>Watering and irrigation.</li>
+                    <li>Fertilization and soil enrichment.</li>
+                    <li>Weed control (manual or chemical).</li>
+                    <li>Pest and disease management.</li>
+                    <li>Pruning and thinning plants.</li>
+                </ul>
+
+                <h3>4. Harvesting</h3>
+                <ul>
+                    <li>Gathering crops (manual or mechanical).</li>
+                    <li>Post-harvest handling (sorting, cleaning, packing).</li>
+                    <li>Transportation to storage or market.</li>
+                </ul>
+
+                <h3>5. Soil and Water Management</h3>
+                <ul>
+                    <li>Soil conservation practices (terracing, crop rotation).</li>
+                    <li>Building drainage systems and irrigation channels.</li>
+                    <li>Rainwater harvesting and storage.</li>
+                </ul>
+
+                <h3>6. Livestock Farming</h3>
+                <ul>
+                    <li>Feeding, breeding, and managing livestock.</li>
+                    <li>Milking and dairy processing.</li>
+                    <li>Veterinary care and health management.</li>
+                    <li>Cleaning and maintaining pens and barns.</li>
+                </ul>
+
+                <h3>7. Post-Harvest Management</h3>
+                <ul>
+                    <li>Drying, milling, and processing crops.</li>
+                    <li>Storing in silos or warehouses.</li>
+                    <li>Value addition through packaging and branding.</li>
+                </ul>
+
+                <h3>8. Farm Equipment Operation and Maintenance</h3>
+                <ul>
+                    <li>Operating tractors, harvesters, and other machinery.</li>
+                    <li>Regular maintenance and repairs of farm tools.</li>
+                    <li>Fuel management.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Empowering Communities, One Service at a Time.</p>
+            <p>At Social Assist, we are dedicated to providing high-quality, reliable services to enhance the lives of individuals and communities.</p>
+            <p>Need assistance? Contact us at <a href="sailendramuddapu@gmail.com">sailendramuddapu@gmail.com</a> or call us at 7989200103.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Example: Toggle login/logout button functionality
+        const loginButton = document.querySelector(".login-btn");
+        const logoutButton = document.querySelector(".logout-btn");
+    
+        loginButton.addEventListener("click", function () {
+            alert("Login functionality to be implemented.");
+            // You can add your login logic here
+        });
+    
+        logoutButton.addEventListener("click", function () {
+            alert("Logout functionality to be implemented.");
+            // You can add your logout logic here
+        });
+    });
+    
+</script>
+</html>
