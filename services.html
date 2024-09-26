@@ -187,8 +187,6 @@
                 margin-top: 15px;
             }
         }
-        
-
 </style>
 </head>
 <body>
@@ -208,8 +206,8 @@
                     </ul>
                 </nav>
                 <div class="user-actions">
-                    <button class="login-btn" aria-label="Login">Login</button>
-                    <button class="logout-btn" aria-label="Logout">Logout</button>
+                    <button class="login-btn" aria-label="Login"><a  href="login.html">Login</a></button>
+                    <button class="logout-btn" aria-label="Logout"><a href="logout.html">Logout</a></button>
                 </div>
             </div>
         </div>
@@ -264,23 +262,5 @@
         </div>
     </footer>
 </body>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Login button functionality
-        const loginButton = document.querySelector(".login-btn");
-        const logoutButton = document.querySelector(".logout-btn");
-    
-        loginButton.addEventListener("click", function () {
-            alert("Login functionality will be implemented here.");
-            // You can add your login logic here
-        });
-    
-        logoutButton.addEventListener("click", function () {
-            alert("Logout functionality will be implemented here.");
-            // You can add your logout logic here
-        });
-    });
-    
-    
-</script>
+
 </html>
