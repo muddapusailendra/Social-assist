@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Social Assist</title>
     <style>
+        /* Styles remain unchanged */
         body {
             font-family: Arial, sans-serif;
-            background-image: url('bg1.jpg'); /* Add a background image */
+            background-image: url('bg1.jpg');
             background-size: cover;
             display: flex;
             justify-content: center;
@@ -64,12 +65,30 @@
 <body>
     <div class="login-container">
         <h2>Login to Social Assist</h2>
-        <form action="services.html">
+        <form id="loginForm">
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
         <a href="register.html">Don't have an account? Register here.</a>
     </div>
+
+    <script>
+        // Check if user is already logged in
+        window.onload = function() {
+            if (localStorage.getItem('isLoggedIn') === 'true') {
+                // If logged in, redirect to services page
+                window.location.href = 'services.html';
+            }
+        };
+
+        // Login functionality
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Assuming login is successful
+            localStorage.setItem('isLoggedIn', 'true');
+            window.location.href = 'services.html';
+        });
+    </script>
 </body>
 </html>
